@@ -22,8 +22,7 @@ public class CreateDeliveryChallan {
 	@FindBy(xpath="//a[contains(text(),'Goods Receipt')]") WebElement goodReceiptButton;
 
 	
-	//Bill No and Description Web element
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[1]/div[5]/div[2]/div[1]/div[2]") WebElement pendingGR;
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[1]/div[5]/div[2]/div[1]/div[2]") WebElement atHubGR;
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]") WebElement selectGR;
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[1]/div[5]/div[4]/div[1]") WebElement createDeliveryChallan;
 	
@@ -40,8 +39,11 @@ public class CreateDeliveryChallan {
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/input[1]") WebElement fDate;
 	
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]") WebElement fromConsignor;
-	@FindBy(xpath="/html[1]/body[1]/div[7]/div[1]/div[3]/button[1]") WebElement consignorPopup;
+	@FindBy(xpath="/html[1]/body[1]/div[5]/div[1]/div[3]/button[1]") WebElement consignorPopup;
 	
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/span[1]/span[1]/span[1]") WebElement selectHubDropdown;
+
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/span[1]/span[1]/span[1]") WebElement mayapuriHub;
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/button[1]") WebElement createDelChallan;
 	@FindBy(xpath="/html[1]/body[1]/div[7]/div[1]/div[3]/button[1]") WebElement createDelChal;
 	
@@ -52,7 +54,7 @@ public class CreateDeliveryChallan {
 	loginButton.click();
 	goodReceiptButton.click();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	pendingGR.click();
+	atHubGR.click();
 	selectGR.click();
 	createDeliveryChallan.click();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -75,6 +77,8 @@ public class CreateDeliveryChallan {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		consignorPopup.click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		selectHubDropdown.click();
+		mayapuriHub.click();
 		
 	}
 		public void createDC()
