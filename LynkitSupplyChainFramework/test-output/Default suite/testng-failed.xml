@@ -6,7 +6,6 @@
       <class name="com.lynkitsupplychainframework.testcases.CreateDeliveryChallanTest">
         <methods>
           <include name="createDC"/>
-          <include name="loginApp"/>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="consignorPopup"/>

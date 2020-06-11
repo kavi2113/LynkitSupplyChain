@@ -18,8 +18,8 @@ ExcelDataProvider excel=new ExcelDataProvider();
 	//driver=BrowserFactory.startApplication(driver, "Chrome", "https://lynkit.io/login");
 		//loginPage.loginToSupplyChain("btmaster@gmail.com", "1234");
 		logger.info("Starting application");
-		DeliveryChallanDispatch loginPage=PageFactory.initElements(driver, DeliveryChallanDispatch.class);
-		loginPage.loginToSupplyChain(excel.getStringData("Login",1,0), excel.getStringData("Login",1,1));
+		DeliveryChallanDispatch dcDispatch=PageFactory.initElements(driver, DeliveryChallanDispatch.class);
+		dcDispatch.loginToSupplyChain(excel.getStringData("Login",1,0), excel.getStringData("Login",1,1));
 		logger.pass("Login Success");
 		}
 }
