@@ -5,34 +5,32 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class PTLDoorDelivery {
-	WebDriver driver;
+public class FTLDoorDelivery {
+WebDriver driver;
 
+public FTLDoorDelivery(WebDriver ldriver)
+{
+	this.driver=ldriver;
+}
 
-	public PTLDoorDelivery(WebDriver ldriver)
-	{
-		this.driver=ldriver;
-	}
-
-	//Login Web elements
+//Login
 @FindBy(xpath="//input[@placeholder='E-MAIL/UserID']") WebElement uname; 
 @FindBy(xpath="//input[@placeholder='PASSWORD']") WebElement pass;
 @FindBy(xpath="//button[@class='login-bt ft-btn']") WebElement loginButton;
 
-//Goods Receipt menu Web element
+//Goods Receipt menu
 @FindBy(xpath="//a[contains(text(),'Goods Receipt')]") WebElement goodReceiptButton;
 
-//Create Goods Receipt button Web element
-@FindBy(xpath="//div[@class='customised-btn grbtn']") WebElement grButton;
-
+//Create Goods Receipt button
+@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[1]/div[5]/div[4]/div[1]") WebElement grButton;
 
 //PaymentType
 @FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-create[1]/main[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/span[1]/span[1]/span[1]") WebElement lrType;	
-@FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[1]") WebElement lrTypeCredit;
+@FindBy(xpath="//li[contains(text(),'Credit')]") WebElement lrTypeCredit;
 
 //To select Contract type
-@FindBy(xpath="//*[@id='form7']/div[2]/div[2]/span/span[1]/span") WebElement conType;;
-@FindBy(xpath="//li[contains(text(),'Part Truck Load')]") WebElement partTruck;
+@FindBy(xpath="//*[@id='form7']/div[2]/div[2]/span/span[1]/span") WebElement conType;
+@FindBy(xpath="//li[contains(text(),'Full Truck Load')]") WebElement fullTruck;
 
 //To select Delivery Type
 @FindBy(xpath="//*[@id='form7']/div[2]/div[3]/span/span[1]/span") WebElement delType;
@@ -40,7 +38,7 @@ public class PTLDoorDelivery {
 
 //To select Transportation Mode
 @FindBy(xpath="//*[@id='form7']/div[2]/div[4]/span/span[1]/span") WebElement transMode;
-@FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[2]") WebElement transModeRoad;
+@FindBy(xpath="//li[contains(text(),'Road')]") WebElement transModeRoad;
 
 //To select Truck
 @FindBy(xpath="//*[@id='form7']/div[3]/div[1]/div/span/span[1]/span") WebElement selectTruck;
@@ -61,7 +59,6 @@ public class PTLDoorDelivery {
 @FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-create[1]/main[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[2]/span[1]/span[1]/span[1]") WebElement selectConsignee;
 @FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[2]") WebElement consigneeName;
 
-
 //Bill No and Description Web element
 @FindBy(xpath="//input[@id='validationTooltip024']") WebElement billNum;
 @FindBy(xpath="//input[@placeholder='Description']") WebElement grDescription;
@@ -73,7 +70,7 @@ public class PTLDoorDelivery {
 @FindBy(xpath="//input[@placeholder='Packages types']") WebElement pkgType;
 @FindBy(xpath="//input[@placeholder='No. of Pkgs']") WebElement nop;
 
-
+//Invoide detail
 @FindBy(xpath="//*[@id='form7']/div[9]/div[2]/div/div/div[1]/input") WebElement invoiceNo;
 @FindBy(xpath="//input[@id='invoiceDate-0']") WebElement invDate;
 @FindBy(xpath="//*[@id='form7']/div[9]/div[2]/div/div/div[3]/input") WebElement invValue;
@@ -89,18 +86,15 @@ public class PTLDoorDelivery {
 @FindBy(xpath="/html/body/app-root/app-receipt-create/main/div/div[2]/div/form/div[15]/div[1]/div/div/span/span[1]/span") WebElement selectSourceType;
 @FindBy(xpath="//li[contains(text(),'Testing Station')]") WebElement selectSource;
 
-//select Final Delivery
-@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-create[1]/main[1]/div[1]/div[2]/div[1]/form[1]/div[15]/div[2]/div[1]/div[1]/span[1]/span[1]/span[1]") WebElement selectFinalType;
-@FindBy(xpath="//li[contains(text(),'Dwarka')]") WebElement selectFinal;
 
 //Pick and Destination Address
 @FindBy(xpath="//div[@class='col-4']//label[@class='custom-switch-btn']") WebElement pickAddress;
 @FindBy(xpath="//div[@class='col-5']//label[@class='custom-switch-btn']")WebElement destAddress;
 
-
 @FindBy(xpath="//span[contains(text(),'Create Goods Receipt')]") WebElement createGRButton;
 
 @FindBy(xpath="//button[@class='swal2-confirm swal2-styled']") WebElement confirmPopup;
+
 
 public void loginToSupplyChain(String username, String password)
 {
@@ -117,10 +111,9 @@ public void basicDetails()
 	lrType.click();	
 	lrTypeCredit.click();
 	
-	
 	//To select Contract type
 	conType.click();
-	partTruck.click();
+	fullTruck.click();
 
 	//To select Delivery Type
 	delType.click();
@@ -135,11 +128,11 @@ public void basicDetails()
 	//selectTruckValue.click();
 
 	//Enter Driver Name
-		//driverName.sendKeys(enterdriverName);
+	//driverName.sendKeys(enterdriverName);
 
-		//Enter Driver MObile No
-		//dMobile.sendKeys(enterdriverMobile);
-		
+	//Enter Driver MObile No
+	//dMobile.sendKeys(enterdriverMobile);
+
 	//To select Consignor
 	selectConsignor.click();
 	consignorName.click();
@@ -147,13 +140,16 @@ public void basicDetails()
 
 	//To select consignee
 	selectConsignee.click();
+	//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	consigneeName.click();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		}
+	
+}
 
 public void createBill(String grBillNum, String cgrDescription, String grCode)
 {
 billNum.sendKeys(grBillNum);
+
 grDescription.sendKeys(cgrDescription);
 grHSNCode.sendKeys(grCode);
 }
@@ -186,19 +182,16 @@ public void paymentDetails(String createAdvFreight,String createFCharge, String 
 	selectSourceType.click();
 	selectSource.click();
    
-	selectFinalType.click();
-	selectFinal.click();
-	
-    //pickAddress.click();
+    pickAddress.click();
     destAddress.click();
- 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
-}
+ 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
 
 public void createGbutton()
 {
-	createGRButton.click();                                         
+	createGRButton.click();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	confirmPopup.click();                                           
+	confirmPopup.click();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 

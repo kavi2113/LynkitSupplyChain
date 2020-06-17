@@ -59,7 +59,7 @@ public class PTLGodown {
 @FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[1]") WebElement consignorName;
 
 //To select consignee
-@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-create[1]/main[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[2]/span[1]/span[1]/span[1]") WebElement selectconsignee;
+@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-create[1]/main[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[2]/span[1]/span[1]/span[1]") WebElement selectConsignee;
 @FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[2]") WebElement consigneeName;
 
 //Bill No and Description Web element
@@ -91,7 +91,8 @@ public class PTLGodown {
 
 //select Final Delivery
 @FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-create[1]/main[1]/div[1]/div[2]/div[1]/form[1]/div[15]/div[2]/div[1]/div[1]/span[1]/span[1]/span[1]") WebElement selectFinalType;
-@FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[5]") WebElement selectFinal;
+
+@FindBy(xpath="//li[contains(text(),'Dwarka')]") WebElement selectFinal;
 
 //Pick and Destination Address
 @FindBy(xpath="//div[@class='col-4']//label[@class='custom-switch-btn']") WebElement pickAddress;
@@ -142,15 +143,15 @@ public void basicDetails()
 			//dMobile.sendKeys(enterdriverMobile);
 			
 		//To select Consignor
-			selectConsignor.click();
-			consignorName.click();
+		selectConsignor.click();
+		consignorName.click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-	//To select consignee
-		selectconsignee.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//To select consignee
+		selectConsignee.click();
 		consigneeName.click();
-
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			
 }
 
 public void createBill(String grBillNum, String cgrDescription, String grCode)
