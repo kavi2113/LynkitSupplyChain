@@ -53,9 +53,10 @@ public class BaseClass {
 	}
 	
 	@AfterClass
-	public void tearDown()
+	public void tearDown() throws InterruptedException
 	{
-	//BrowserFactory.quitBrowser(driver);
+		Thread.sleep(5000);
+	BrowserFactory.quitBrowser(driver);
 	}
 	
 	@AfterMethod

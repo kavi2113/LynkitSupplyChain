@@ -23,7 +23,7 @@ public class CreateDeliveryChallan {
 
 	
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[1]/div[5]/div[2]/div[1]/div[2]") WebElement atHubGR;
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]") WebElement selectGR;
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]") WebElement selectGR;
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[1]/div[5]/div[4]/div[1]") WebElement createDeliveryChallan;
 	
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/span[1]/span[1]") WebElement tMode;
@@ -38,29 +38,36 @@ public class CreateDeliveryChallan {
 	
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/input[1]") WebElement fDate;
 	
+	//Consignor popup
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]") WebElement fromConsignor;
 	@FindBy(xpath="/html[1]/body[1]/div[5]/div[1]/div[3]/button[1]") WebElement consignorPopup;
 	
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/span[1]/span[1]/span[1]") WebElement selectHubDropdown;
+	//Hub Dropdown
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/span[1]/span[1]/span[1]") WebElement selectHubDropdown;
 
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/span[1]/span[1]/span[1]") WebElement mayapuriHub;
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/button[1]") WebElement createDelChallan;
-	@FindBy(xpath="/html[1]/body[1]/div[7]/div[1]/div[3]/button[1]") WebElement createDelChal;
+	@FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[6]") WebElement mayapuriHub;
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/button[1]") WebElement createDelChallanButton;
+	@FindBy(xpath="/html[1]/body[1]/div[5]/div[1]/div[3]/button[1]") WebElement confirmToCreateChal;
 	
-	public void loginToSupplyChain(String username, String password)
+	@FindBy(xpath="/html[1]/body[1]/div[5]/div[1]/div[3]/button[1]") WebElement okClick;
+	
+	public void loginToSupplyChain(String username, String password) throws InterruptedException
 	{
 	uname.sendKeys(username);
 	pass.sendKeys(password);
 	loginButton.click();
 	goodReceiptButton.click();
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	Thread.sleep(2000);
+	
 	atHubGR.click();
+	Thread.sleep(2000);
 	selectGR.click();
+	Thread.sleep(2000);
 	createDeliveryChallan.click();
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	Thread.sleep(2000);
 	}	
 	
-	public void createDelChallan(String enterEWayBill, String enterFlightNo, String enterFDate)
+	public void createDelChallan(String enterEWayBill, String enterFlightNo, String enterFDate) throws InterruptedException
 	{
 
 		tMode.click();
@@ -68,25 +75,28 @@ public class CreateDeliveryChallan {
 		ewayBillNum.sendKeys(enterEWayBill);
 		flightNo.sendKeys(enterFlightNo);
 		fDate.sendKeys(enterFDate);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Thread.sleep(2000);
 	}
 	
-		public void consignorPopup()
+		public void consignorPopup() throws InterruptedException
 		{	
 		fromConsignor.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Thread.sleep(2000);
 		consignorPopup.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Thread.sleep(4000);
 		selectHubDropdown.click();
+		Thread.sleep(2000);
 		mayapuriHub.click();
+		Thread.sleep(2000);
 		
 	}
-		public void createDC()
+		public void createDC() throws InterruptedException
 		{
-			createDelChallan.click();                                         
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			createDelChal.click();                                           
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			createDelChallanButton.click();                                         
+			Thread.sleep(2000);
+			confirmToCreateChal.click();                                           
+			Thread.sleep(2000);
+			okClick.click();
 			}
 	}
 	

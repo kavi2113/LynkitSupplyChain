@@ -12,7 +12,7 @@ public class FTLDoorDeliveryTest extends BaseClass{
 	ExcelDataProvider excel=new ExcelDataProvider();
 	
 	@Test(priority=1)
-	public void loginApp()
+	public void loginApp() throws InterruptedException
 	{
 		logger=report.createTest("Login to Supply Chain");
 	//driver=BrowserFactory.startApplication(driver, "Chrome", "https://lynkit.io/login");
@@ -24,7 +24,7 @@ public class FTLDoorDeliveryTest extends BaseClass{
 		}
 	
 	@Test(priority=2)
-	public void basicDetails()
+	public void basicDetails() throws InterruptedException
 	{
 		FTLDoorDelivery loginPage=PageFactory.initElements(driver, FTLDoorDelivery.class);
 		loginPage.basicDetails();

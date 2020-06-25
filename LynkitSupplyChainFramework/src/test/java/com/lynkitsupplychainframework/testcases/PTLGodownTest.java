@@ -14,7 +14,7 @@ public class PTLGodownTest  extends BaseClass{
 ExcelDataProvider excel=new ExcelDataProvider();
 	
 	@Test(priority=1)
-	public void loginApp()
+	public void loginApp() throws InterruptedException
 	{
 		logger=report.createTest("Login to Supply Chain");
 	//driver=BrowserFactory.startApplication(driver, "Chrome", "https://lynkit.io/login");
@@ -26,7 +26,7 @@ ExcelDataProvider excel=new ExcelDataProvider();
 		}
 	
 	@Test(priority=2)
-	public void basicDetails()
+	public void basicDetails() throws InterruptedException
 	{
 		PTLGodown loginPage=PageFactory.initElements(driver, PTLGodown.class);
 		loginPage.basicDetails();
@@ -54,7 +54,7 @@ ExcelDataProvider excel=new ExcelDataProvider();
 		}
 	
 	@Test(priority=6)
-	public void paymentDetails()
+	public void paymentDetails() throws InterruptedException
 	{
 		PTLGodown loginPage=PageFactory.initElements(driver, PTLGodown.class);
 		loginPage.paymentDetails(excel.getStringData("GR",0,12),excel.getStringData("GR",0,13),excel.getStringData("GR",0,14));
@@ -67,4 +67,6 @@ ExcelDataProvider excel=new ExcelDataProvider();
 		loginPage.createGbutton();
 		}	
 
+	
+	
 }

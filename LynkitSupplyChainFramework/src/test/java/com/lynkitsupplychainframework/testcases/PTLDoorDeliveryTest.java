@@ -13,7 +13,7 @@ public class PTLDoorDeliveryTest extends BaseClass{
 ExcelDataProvider excel=new ExcelDataProvider();
 	
 	@Test(priority=1)
-	public void loginApp()
+	public void loginApp() throws InterruptedException
 	{
 		logger=report.createTest("Login to Supply Chain");
 	//driver=BrowserFactory.startApplication(driver, "Chrome", "https://lynkit.io/login");
@@ -25,7 +25,7 @@ ExcelDataProvider excel=new ExcelDataProvider();
 		}
 	
 	@Test(priority=2)
-	public void basicDetails()
+	public void basicDetails() throws InterruptedException
 	{
 		PTLDoorDelivery loginPage=PageFactory.initElements(driver, PTLDoorDelivery.class);
 		loginPage.basicDetails();
@@ -53,7 +53,7 @@ ExcelDataProvider excel=new ExcelDataProvider();
 		}
 	
 	@Test(priority=6)
-	public void paymentDetails()
+	public void paymentDetails() throws InterruptedException
 	{
 		PTLDoorDelivery loginPage=PageFactory.initElements(driver, PTLDoorDelivery.class);
 		loginPage.paymentDetails(excel.getStringData("GR",0,12),excel.getStringData("GR",0,13),excel.getStringData("GR",0,14));

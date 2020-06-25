@@ -96,16 +96,17 @@ public FTLDoorDelivery(WebDriver ldriver)
 @FindBy(xpath="//button[@class='swal2-confirm swal2-styled']") WebElement confirmPopup;
 
 
-public void loginToSupplyChain(String username, String password)
+public void loginToSupplyChain(String username, String password) throws InterruptedException
 {
 uname.sendKeys(username);
 pass.sendKeys(password);
 loginButton.click();
 goodReceiptButton.click();
 grButton.click();
+Thread.sleep(2000);
 }
 
-public void basicDetails()
+public void basicDetails() throws InterruptedException
 {
 	//Selection of LR Type
 	lrType.click();	
@@ -138,6 +139,8 @@ public void basicDetails()
 	consignorName.click();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
+	Thread.sleep(2000);
+	
 	//To select consignee
 	selectConsignee.click();
 	//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

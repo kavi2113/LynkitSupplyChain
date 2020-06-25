@@ -2,9 +2,12 @@ package com.lynkitsupplychainframework.pages;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import com.lynkitsupplychainframework.utility.BrowserFactory;
 
 public class PTLGodown {
 	WebDriver driver;
@@ -62,6 +65,12 @@ public class PTLGodown {
 @FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-create[1]/main[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[2]/span[1]/span[1]/span[1]") WebElement selectConsignee;
 @FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[2]") WebElement consigneeName;
 
+//To select consignee1
+@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-create[1]/main[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[2]/span[1]/span[1]/span[1]") WebElement selectConsignee1;
+@FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[2]") WebElement consigneeName1;
+
+
+
 //Bill No and Description Web element
 @FindBy(xpath="//input[@id='validationTooltip024']") WebElement billNum;
 @FindBy(xpath="//input[@placeholder='Description']") WebElement grDescription;
@@ -104,55 +113,55 @@ public class PTLGodown {
 @FindBy(xpath="//button[@class='swal2-confirm swal2-styled']") WebElement confirmPopup;
 
 
-public void loginToSupplyChain(String username, String password)
+public void loginToSupplyChain(String username, String password) throws InterruptedException
 {
 uname.sendKeys(username);
 pass.sendKeys(password);
 loginButton.click();
 goodReceiptButton.click();
 grButton.click();
+Thread.sleep(2000);
 }
 
-public void basicDetails()
+public void basicDetails() throws InterruptedException
 {
+	//driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	//Selection of LR Type
 		lrType.click();	
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		lrTypeCredit.click();
-		
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		
 		//To select Contract type
 		conType.click();
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		partTruck.click();
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 
 		//To select Delivery Type
 		delType.click();
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		delDoorDelivery.click();
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 
 		//To select Transportation Mode
 		transMode.click();
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		transModeRoad.click();
-
-		//To select Truck
-		//selectTruck.click();
-		//selectTruckValue.click();
-
-		//Enter Driver Name
-			//driverName.sendKeys(enterdriverName);
-
-			//Enter Driver MObile No
-			//dMobile.sendKeys(enterdriverMobile);
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 			
 		//To select Consignor
 		selectConsignor.click();
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		consignorName.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+		Thread.sleep(2000);
 		//To select consignee
 		selectConsignee.click();
-		consigneeName.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			
-}
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+		consigneeName.click();		
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);		
+		}
 
 public void createBill(String grBillNum, String cgrDescription, String grCode)
 {
@@ -174,34 +183,45 @@ public void invoiceDetails(String createInvNo, String createInvDate,String creat
 	invoiceNo.sendKeys(createInvNo);
 	invDate.sendKeys(createInvDate);
 	invValue.sendKeys(createInvValue);
-	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 }
 
-public void paymentDetails(String createAdvFreight,String createFCharge, String createExpDate)
+public void paymentDetails(String createAdvFreight,String createFCharge, String createExpDate) throws InterruptedException
 {
 	advFreight.sendKeys(createAdvFreight);
+	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	selectFreightType.click();
+	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	selectFreight.click();
 	
 	fCharge.sendKeys(createFCharge);
+	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	expDate.sendKeys(createExpDate);
+	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	
 	selectSourceType.click();
+	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+	
 	selectSource.click();
-   
+	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+	
+	Thread.sleep(2000);
 	selectFinalType.click();
+	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	selectFinal.click();
+	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	
     //pickAddress.click();
-    destAddress.click();
- 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    //destAddress.click();
+ 	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	}
 
 public void createGbutton()
 {
 	createGRButton.click();                                         
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	confirmPopup.click();                                           
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
+
 }
