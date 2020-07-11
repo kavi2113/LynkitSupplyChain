@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.lynkitsupplychainframework.testcases.CreateDeliveryChallanTest">
+      <class name="com.lynkitsupplychainframework.testcases.SendMailTest">
         <methods>
-          <include name="loginApp"/>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="tearDownMethod"/>
+          <include name="loginApp"/>
           <include name="setUpSuite"/>
         </methods>
-      </class> <!-- com.lynkitsupplychainframework.testcases.CreateDeliveryChallanTest -->
+      </class> <!-- com.lynkitsupplychainframework.testcases.SendMailTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -61,12 +61,11 @@ ExcelDataProvider excel=new ExcelDataProvider();
 		}
 	
 	@Test(priority=7)
-	public void createGoods()
+	public void createGoods() throws InterruptedException
 	{
 		PTLGodown loginPage=PageFactory.initElements(driver, PTLGodown.class);
 		loginPage.createGbutton();
 		}	
 
-	
-	
+		
 }

@@ -175,8 +175,10 @@ public void invoiceDetails(String createInvNo, String createInvDate,String creat
 
 public void paymentDetails(String createAdvFreight,String createFCharge, String createExpDate)
 {
+	/*
 	advFreight.sendKeys(createAdvFreight);
 	selectFreightType.click();
+	*/
 	selectFreight.click();
 	
 	fCharge.sendKeys(createFCharge);

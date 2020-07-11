@@ -21,32 +21,34 @@ public class CreateDeliveryChallan {
 	//Goods Receipt menu Web element
 	@FindBy(xpath="//a[contains(text(),'Goods Receipt')]") WebElement goodReceiptButton;
 
+	@FindBy(xpath="//span[@id='select2-contractType-container']") WebElement contractType;
+	@FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[2]") WebElement selectPTL;
 	
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[1]/div[5]/div[2]/div[1]/div[2]") WebElement atHubGR;
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]") WebElement selectGR;
 	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[1]/div[5]/div[4]/div[1]") WebElement createDeliveryChallan;
 	
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/span[1]/span[1]") WebElement tMode;
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/span[1]/span[1]") WebElement tMode;
 	@FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[3]") WebElement modeAir;
 	
 	//Bill No and Description Web element
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/input[1]") WebElement ewayBillNum;
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/input[1]") WebElement ewayBillNum;
 	
 	
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]") WebElement flightNo;
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]") WebElement flightNo;
 			
 	
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/input[1]") WebElement fDate;
+	@FindBy(xpath="//input[@id='mode_date']") WebElement fDate;
 	
 	//Consignor popup
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]") WebElement fromConsignor;
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[3]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]") WebElement fromConsignor;
 	@FindBy(xpath="/html[1]/body[1]/div[5]/div[1]/div[3]/button[1]") WebElement consignorPopup;
 	
 	//Hub Dropdown
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/span[1]/span[1]/span[1]") WebElement selectHubDropdown;
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[3]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/span[1]/span[1]/span[1]") WebElement selectHubDropdown;
 
 	@FindBy(xpath="/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[6]") WebElement mayapuriHub;
-	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[1]/div[1]/div[1]/div[2]/button[1]") WebElement createDelChallanButton;
+	@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/div[3]/div[1]/div[1]/div[2]/button[1]") WebElement createDelChallanButton;
 	@FindBy(xpath="/html[1]/body[1]/div[5]/div[1]/div[3]/button[1]") WebElement confirmToCreateChal;
 	
 	@FindBy(xpath="/html[1]/body[1]/div[5]/div[1]/div[3]/button[1]") WebElement okClick;
@@ -57,6 +59,11 @@ public class CreateDeliveryChallan {
 	pass.sendKeys(password);
 	loginButton.click();
 	goodReceiptButton.click();
+	Thread.sleep(2000);
+	
+	contractType.click();
+	Thread.sleep(2000);
+	selectPTL.click();
 	Thread.sleep(2000);
 	
 	atHubGR.click();

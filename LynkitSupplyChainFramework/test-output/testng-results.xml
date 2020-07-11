@@ -20,12 +20,12 @@
       <![CDATA[Test Completed >>> Reports Generated]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25059" started-at="2020-06-25T17:47:16 IST" finished-at="2020-06-25T17:47:41 IST">
+  <suite name="Default suite" duration-ms="28643" started-at="2020-07-11T20:31:36 IST" finished-at="2020-07-11T20:32:04 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25059" started-at="2020-06-25T17:47:16 IST" finished-at="2020-06-25T17:47:41 IST">
-      <class name="com.lynkitsupplychainframework.testcases.DeliveryChallanDispatchTest">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.lynkitsupplychainframework.testcases.DeliveryChallanDispatchTest@63070bab]" name="setUpSuite" is-config="true" duration-ms="248" started-at="2020-06-25T17:47:16 IST" finished-at="2020-06-25T17:47:16 IST">
+    <test name="Default test" duration-ms="28643" started-at="2020-07-11T20:31:36 IST" finished-at="2020-07-11T20:32:04 IST">
+      <class name="com.lynkitsupplychainframework.testcases.SendMailTest">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.lynkitsupplychainframework.testcases.SendMailTest@68e5eea7]" name="setUpSuite" is-config="true" duration-ms="304" started-at="2020-07-11T20:31:35 IST" finished-at="2020-07-11T20:31:36 IST">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is gettinge ready]]>
@@ -35,7 +35,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.lynkitsupplychainframework.testcases.DeliveryChallanDispatchTest@63070bab]" name="setup" is-config="true" duration-ms="12099" started-at="2020-06-25T17:47:16 IST" finished-at="2020-06-25T17:47:28 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lynkitsupplychainframework.testcases.SendMailTest@68e5eea7]" name="setup" is-config="true" duration-ms="10536" started-at="2020-07-11T20:31:36 IST" finished-at="2020-07-11T20:31:46 IST">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting application ready]]>
@@ -45,15 +45,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginApp()[pri:1, instance:com.lynkitsupplychainframework.testcases.DeliveryChallanDispatchTest@63070bab]" name="loginApp" duration-ms="5881" started-at="2020-06-25T17:47:28 IST" finished-at="2020-06-25T17:47:34 IST">
+        <test-method status="PASS" signature="loginApp()[pri:1, instance:com.lynkitsupplychainframework.testcases.SendMailTest@68e5eea7]" name="loginApp" duration-ms="10366" started-at="2020-07-11T20:31:46 IST" finished-at="2020-07-11T20:31:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.DeliveryChallanDispatchTest@63070bab]" name="tearDownMethod" is-config="true" duration-ms="1107" started-at="2020-06-25T17:47:34 IST" finished-at="2020-06-25T17:47:35 IST">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.SendMailTest@68e5eea7]" name="tearDownMethod" is-config="true" duration-ms="1695" started-at="2020-07-11T20:31:57 IST" finished-at="2020-07-11T20:31:58 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=DeliveryChallanDispatchTest.loginApp()[pri:1, instance:com.lynkitsupplychainframework.testcases.DeliveryChallanDispatchTest@63070bab] output={null}]]]>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=SendMailTest.loginApp()[pri:1, instance:com.lynkitsupplychainframework.testcases.SendMailTest@68e5eea7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -66,11 +66,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lynkitsupplychainframework.testcases.DeliveryChallanDispatchTest@63070bab]" name="tearDown" is-config="true" duration-ms="5914" started-at="2020-06-25T17:47:35 IST" finished-at="2020-06-25T17:47:41 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lynkitsupplychainframework.testcases.SendMailTest@68e5eea7]" name="tearDown" is-config="true" duration-ms="5990" started-at="2020-07-11T20:31:58 IST" finished-at="2020-07-11T20:32:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.lynkitsupplychainframework.testcases.DeliveryChallanDispatchTest -->
+      </class> <!-- com.lynkitsupplychainframework.testcases.SendMailTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

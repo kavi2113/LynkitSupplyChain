@@ -112,6 +112,8 @@ public class PTLGodown {
 
 @FindBy(xpath="//button[@class='swal2-confirm swal2-styled']") WebElement confirmPopup;
 
+@FindBy(xpath="/html[1]/body[1]/app-root[1]/app-receipt-list[1]/main[1]/div[1]/div[1]/div[5]/div[2]/div[1]/div[2]") WebElement  atHubGR;
+
 
 public void loginToSupplyChain(String username, String password) throws InterruptedException
 {
@@ -188,16 +190,20 @@ public void invoiceDetails(String createInvNo, String createInvDate,String creat
 
 public void paymentDetails(String createAdvFreight,String createFCharge, String createExpDate) throws InterruptedException
 {
-	advFreight.sendKeys(createAdvFreight);
+	/*
+	 advFreight.sendKeys(createAdvFreight);
+	 
 	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	selectFreightType.click();
 	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+	*/
 	selectFreight.click();
 	
 	fCharge.sendKeys(createFCharge);
 	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	expDate.sendKeys(createExpDate);
 	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+	
 	
 	selectSourceType.click();
 	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
@@ -216,12 +222,14 @@ public void paymentDetails(String createAdvFreight,String createFCharge, String 
  	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	}
 
-public void createGbutton()
+public void createGbutton() throws InterruptedException
 {
 	createGRButton.click();                                         
-	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
-	confirmPopup.click();                                           
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	Thread.sleep(2000);
+	confirmPopup.click();       
+	Thread.sleep(2000);
 	}
+
+
 
 }

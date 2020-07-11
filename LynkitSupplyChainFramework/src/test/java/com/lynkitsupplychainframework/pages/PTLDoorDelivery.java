@@ -178,8 +178,10 @@ public void invoiceDetails(String createInvNo, String createInvDate,String creat
 
 public void paymentDetails(String createAdvFreight,String createFCharge, String createExpDate) throws InterruptedException
 {
-	advFreight.sendKeys(createAdvFreight);
+	/*
+	 advFreight.sendKeys(createAdvFreight);
 	selectFreightType.click();
+	*/
 	selectFreight.click();
 	
 	fCharge.sendKeys(createFCharge);
