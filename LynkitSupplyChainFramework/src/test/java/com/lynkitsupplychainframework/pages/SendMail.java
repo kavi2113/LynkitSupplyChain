@@ -41,7 +41,7 @@ public class SendMail {
 	@FindBy(xpath="/html[1]/body[1]/div[5]/div[1]/div[3]/button[1]") WebElement yesButton;
 	@FindBy(xpath="/html[1]/body[1]/div[4]/div[1]/div[3]/button[1]") WebElement okButton;
 
-	public void loginToSupplyChain(String username, String password)
+	public void loginToSupplyChain(String username, String password) throws InterruptedException
 	{
 	uname.sendKeys(username);
 	pass.sendKeys(password);
@@ -51,6 +51,7 @@ public class SendMail {
 	atHub.click();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	shareButton.click();
+Thread.sleep(3000);
 	typeEmail.sendKeys("kavinder@lynkit.in");
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	typeNotification.sendKeys("PTL Godown GR");

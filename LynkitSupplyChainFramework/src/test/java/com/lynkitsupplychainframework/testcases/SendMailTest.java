@@ -11,7 +11,7 @@ public class SendMailTest  extends BaseClass{
 ExcelDataProvider excel=new ExcelDataProvider();
 	
 	@Test(priority=1)
-	public void loginApp()
+	public void loginApp() throws InterruptedException
 	{
 		logger=report.createTest("Login to Supply Chain");
 	//driver=BrowserFactory.startApplication(driver, "Chrome", "https://lynkit.io/login");
