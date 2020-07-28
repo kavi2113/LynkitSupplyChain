@@ -3,15 +3,22 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.lynkitsupplychainframework.testcases.FTLGodownTest">
+      <class name="com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest">
         <methods>
+          <include name="createFTLGodownBill"/>
+          <include name="loginFTLApp"/>
+          <include name="invoiceFTLGodownDetails"/>
           <include name="setup"/>
-          <include name="transportDetails"/>
+          <include name="createFTLGodownGoods"/>
           <include name="tearDown"/>
+          <include name="transportFTLGodownDetails"/>
           <include name="tearDownMethod"/>
+          <include name="basicFTLGodownDetails"/>
+          <include name="paymentFTLGodownDetails"/>
+          <include name="weightFTLGodownDetails"/>
           <include name="setUpSuite"/>
         </methods>
-      </class> <!-- com.lynkitsupplychainframework.testcases.FTLGodownTest -->
+      </class> <!-- com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

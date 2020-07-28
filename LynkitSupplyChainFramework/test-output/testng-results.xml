@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
   <reporter-output>
     <line>
       <![CDATA[Setting up reports and Test is gettinge ready]]>
@@ -61,13 +61,55 @@
     <line>
       <![CDATA[Test Completed >>> Reports Generated]]>
     </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89748" started-at="2020-07-16T11:20:54 IST" finished-at="2020-07-16T11:22:24 IST">
+  <suite name="Default suite" duration-ms="100575" started-at="2020-07-28T14:22:59 IST" finished-at="2020-07-28T14:24:40 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="89748" started-at="2020-07-16T11:20:54 IST" finished-at="2020-07-16T11:22:24 IST">
-      <class name="com.lynkitsupplychainframework.testcases.FTLGodownTest">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="setUpSuite" is-config="true" duration-ms="300" started-at="2020-07-16T11:20:54 IST" finished-at="2020-07-16T11:20:54 IST">
+    <test name="Default test" duration-ms="100575" started-at="2020-07-28T14:22:59 IST" finished-at="2020-07-28T14:24:40 IST">
+      <class name="com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="setUpSuite" is-config="true" duration-ms="330" started-at="2020-07-28T14:22:59 IST" finished-at="2020-07-28T14:22:59 IST">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is gettinge ready]]>
@@ -77,7 +119,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="setup" is-config="true" duration-ms="10465" started-at="2020-07-16T11:20:54 IST" finished-at="2020-07-16T11:21:04 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="setup" is-config="true" duration-ms="10257" started-at="2020-07-28T14:22:59 IST" finished-at="2020-07-28T14:23:10 IST">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting application ready]]>
@@ -87,15 +129,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginApp()[pri:1, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="loginApp" duration-ms="7268" started-at="2020-07-16T11:21:04 IST" finished-at="2020-07-16T11:21:12 IST">
+        <test-method status="PASS" signature="loginApp()[pri:1, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="loginApp" duration-ms="6365" started-at="2020-07-28T14:23:10 IST" finished-at="2020-07-28T14:23:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="1330" started-at="2020-07-16T11:21:12 IST" finished-at="2020-07-16T11:21:13 IST">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="1055" started-at="2020-07-28T14:23:16 IST" finished-at="2020-07-28T14:23:17 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=FTLGodownTest.loginApp()[pri:1, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7] output={null}]]]>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=FTLDoorDeliveryTest.loginApp()[pri:1, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -108,15 +150,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="basicDetails()[pri:2, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="basicDetails" duration-ms="4967" started-at="2020-07-16T11:21:13 IST" finished-at="2020-07-16T11:21:18 IST">
+        <test-method status="PASS" signature="basicFTLDoorDetails()[pri:2, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="basicFTLDoorDetails" duration-ms="3836" started-at="2020-07-28T14:23:17 IST" finished-at="2020-07-28T14:23:21 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basicDetails -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="759" started-at="2020-07-16T11:21:18 IST" finished-at="2020-07-16T11:21:19 IST">
+        </test-method> <!-- basicFTLDoorDetails -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="562" started-at="2020-07-28T14:23:21 IST" finished-at="2020-07-28T14:23:22 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=basicDetails status=SUCCESS method=FTLGodownTest.basicDetails()[pri:2, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7] output={null}]]]>
+                <![CDATA[[TestResult name=basicFTLDoorDetails status=SUCCESS method=FTLDoorDeliveryTest.basicFTLDoorDetails()[pri:2, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -129,15 +171,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="createBill()[pri:3, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="createBill" duration-ms="1200" started-at="2020-07-16T11:21:19 IST" finished-at="2020-07-16T11:21:20 IST">
+        <test-method status="PASS" signature="createFTLDoorBill()[pri:3, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="createFTLDoorBill" duration-ms="827" started-at="2020-07-28T14:23:22 IST" finished-at="2020-07-28T14:23:22 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createBill -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="603" started-at="2020-07-16T11:21:20 IST" finished-at="2020-07-16T11:21:21 IST">
+        </test-method> <!-- createFTLDoorBill -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="477" started-at="2020-07-28T14:23:22 IST" finished-at="2020-07-28T14:23:23 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createBill status=SUCCESS method=FTLGodownTest.createBill()[pri:3, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7] output={null}]]]>
+                <![CDATA[[TestResult name=createFTLDoorBill status=SUCCESS method=FTLDoorDeliveryTest.createFTLDoorBill()[pri:3, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -150,15 +192,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="weightDetails()[pri:4, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="weightDetails" duration-ms="1314" started-at="2020-07-16T11:21:21 IST" finished-at="2020-07-16T11:21:22 IST">
+        <test-method status="PASS" signature="weightFTLDoorDetails()[pri:4, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="weightFTLDoorDetails" duration-ms="835" started-at="2020-07-28T14:23:23 IST" finished-at="2020-07-28T14:23:24 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- weightDetails -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="651" started-at="2020-07-16T11:21:22 IST" finished-at="2020-07-16T11:21:23 IST">
+        </test-method> <!-- weightFTLDoorDetails -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="482" started-at="2020-07-28T14:23:24 IST" finished-at="2020-07-28T14:23:24 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=weightDetails status=SUCCESS method=FTLGodownTest.weightDetails()[pri:4, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7] output={null}]]]>
+                <![CDATA[[TestResult name=weightFTLDoorDetails status=SUCCESS method=FTLDoorDeliveryTest.weightFTLDoorDetails()[pri:4, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -171,15 +213,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="invoiceDetails()[pri:5, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="invoiceDetails" duration-ms="1278" started-at="2020-07-16T11:21:23 IST" finished-at="2020-07-16T11:21:24 IST">
+        <test-method status="PASS" signature="invoiceFTLDoorDetails()[pri:5, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="invoiceFTLDoorDetails" duration-ms="870" started-at="2020-07-28T14:23:24 IST" finished-at="2020-07-28T14:23:25 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invoiceDetails -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="1128" started-at="2020-07-16T11:21:24 IST" finished-at="2020-07-16T11:21:25 IST">
+        </test-method> <!-- invoiceFTLDoorDetails -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="505" started-at="2020-07-28T14:23:25 IST" finished-at="2020-07-28T14:23:26 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invoiceDetails status=SUCCESS method=FTLGodownTest.invoiceDetails()[pri:5, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7] output={null}]]]>
+                <![CDATA[[TestResult name=invoiceFTLDoorDetails status=SUCCESS method=FTLDoorDeliveryTest.invoiceFTLDoorDetails()[pri:5, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -192,15 +234,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="paymentDetails()[pri:6, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="paymentDetails" duration-ms="12446" started-at="2020-07-16T11:21:25 IST" finished-at="2020-07-16T11:21:37 IST">
+        <test-method status="PASS" signature="paymentFTLDoorDetails()[pri:6, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="paymentFTLDoorDetails" duration-ms="1334" started-at="2020-07-28T14:23:26 IST" finished-at="2020-07-28T14:23:27 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- paymentDetails -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="595" started-at="2020-07-16T11:21:37 IST" finished-at="2020-07-16T11:21:38 IST">
+        </test-method> <!-- paymentFTLDoorDetails -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="547" started-at="2020-07-28T14:23:27 IST" finished-at="2020-07-28T14:23:27 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=paymentDetails status=SUCCESS method=FTLGodownTest.paymentDetails()[pri:6, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7] output={null}]]]>
+                <![CDATA[[TestResult name=paymentFTLDoorDetails status=SUCCESS method=FTLDoorDeliveryTest.paymentFTLDoorDetails()[pri:6, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -213,15 +255,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="transportDetails()[pri:7, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="transportDetails" duration-ms="37135" started-at="2020-07-16T11:21:38 IST" finished-at="2020-07-16T11:22:15 IST">
+        <test-method status="PASS" signature="createFTLDoorGoods()[pri:7, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="createFTLDoorGoods" duration-ms="5375" started-at="2020-07-28T14:23:27 IST" finished-at="2020-07-28T14:23:33 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- transportDetails -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="706" started-at="2020-07-16T11:22:15 IST" finished-at="2020-07-16T11:22:16 IST">
+        </test-method> <!-- createFTLDoorGoods -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="526" started-at="2020-07-28T14:23:33 IST" finished-at="2020-07-28T14:23:33 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=transportDetails status=SUCCESS method=FTLGodownTest.transportDetails()[pri:7, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7] output={null}]]]>
+                <![CDATA[[TestResult name=createFTLDoorGoods status=SUCCESS method=FTLDoorDeliveryTest.createFTLDoorGoods()[pri:7, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -234,15 +276,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="createGoods()[pri:8, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="createGoods" duration-ms="495" started-at="2020-07-16T11:22:16 IST" finished-at="2020-07-16T11:22:16 IST">
+        <test-method status="PASS" signature="loginFTLApp()[pri:8, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="loginFTLApp" duration-ms="4324" started-at="2020-07-28T14:23:33 IST" finished-at="2020-07-28T14:23:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createGoods -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="1127" started-at="2020-07-16T11:22:16 IST" finished-at="2020-07-16T11:22:17 IST">
+        </test-method> <!-- loginFTLApp -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="441" started-at="2020-07-28T14:23:38 IST" finished-at="2020-07-28T14:23:38 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createGoods status=SUCCESS method=FTLGodownTest.createGoods()[pri:8, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7] output={null}]]]>
+                <![CDATA[[TestResult name=loginFTLApp status=SUCCESS method=FTLDoorDeliveryTest.loginFTLApp()[pri:8, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -255,11 +297,158 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLGodownTest@2d2ffcb7]" name="tearDown" is-config="true" duration-ms="6213" started-at="2020-07-16T11:22:17 IST" finished-at="2020-07-16T11:22:24 IST">
+        <test-method status="PASS" signature="basicFTLGodownDetails()[pri:9, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="basicFTLGodownDetails" duration-ms="3573" started-at="2020-07-28T14:23:38 IST" finished-at="2020-07-28T14:23:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicFTLGodownDetails -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="496" started-at="2020-07-28T14:23:42 IST" finished-at="2020-07-28T14:23:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=basicFTLGodownDetails status=SUCCESS method=FTLDoorDeliveryTest.basicFTLGodownDetails()[pri:9, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="createFTLGodownBill()[pri:10, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="createFTLGodownBill" duration-ms="810" started-at="2020-07-28T14:23:42 IST" finished-at="2020-07-28T14:23:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFTLGodownBill -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="466" started-at="2020-07-28T14:23:43 IST" finished-at="2020-07-28T14:23:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createFTLGodownBill status=SUCCESS method=FTLDoorDeliveryTest.createFTLGodownBill()[pri:10, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="weightFTLGodownDetails()[pri:11, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="weightFTLGodownDetails" duration-ms="726" started-at="2020-07-28T14:23:43 IST" finished-at="2020-07-28T14:23:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weightFTLGodownDetails -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="479" started-at="2020-07-28T14:23:44 IST" finished-at="2020-07-28T14:23:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=weightFTLGodownDetails status=SUCCESS method=FTLDoorDeliveryTest.weightFTLGodownDetails()[pri:11, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="invoiceFTLGodownDetails()[pri:12, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="invoiceFTLGodownDetails" duration-ms="843" started-at="2020-07-28T14:23:45 IST" finished-at="2020-07-28T14:23:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invoiceFTLGodownDetails -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="490" started-at="2020-07-28T14:23:46 IST" finished-at="2020-07-28T14:23:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invoiceFTLGodownDetails status=SUCCESS method=FTLDoorDeliveryTest.invoiceFTLGodownDetails()[pri:12, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="paymentFTLGodownDetails()[pri:13, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="paymentFTLGodownDetails" duration-ms="11368" started-at="2020-07-28T14:23:46 IST" finished-at="2020-07-28T14:23:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentFTLGodownDetails -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="420" started-at="2020-07-28T14:23:57 IST" finished-at="2020-07-28T14:23:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentFTLGodownDetails status=SUCCESS method=FTLDoorDeliveryTest.paymentFTLGodownDetails()[pri:13, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="transportFTLGodownDetails()[pri:14, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="transportFTLGodownDetails" duration-ms="33678" started-at="2020-07-28T14:23:58 IST" finished-at="2020-07-28T14:24:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transportFTLGodownDetails -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="1102" started-at="2020-07-28T14:24:31 IST" finished-at="2020-07-28T14:24:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=transportFTLGodownDetails status=SUCCESS method=FTLDoorDeliveryTest.transportFTLGodownDetails()[pri:14, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="createFTLGodownGoods()[pri:15, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="createFTLGodownGoods" duration-ms="786" started-at="2020-07-28T14:24:33 IST" finished-at="2020-07-28T14:24:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFTLGodownGoods -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDownMethod" is-config="true" duration-ms="749" started-at="2020-07-28T14:24:33 IST" finished-at="2020-07-28T14:24:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createFTLGodownGoods status=SUCCESS method=FTLDoorDeliveryTest.createFTLGodownGoods()[pri:15, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest@2d2ffcb7]" name="tearDown" is-config="true" duration-ms="5875" started-at="2020-07-28T14:24:34 IST" finished-at="2020-07-28T14:24:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.lynkitsupplychainframework.testcases.FTLGodownTest -->
+      </class> <!-- com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

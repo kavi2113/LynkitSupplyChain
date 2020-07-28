@@ -197,7 +197,6 @@ public void createGbutton()
 	createGRButton.click();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	confirmPopup.click();
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 }
