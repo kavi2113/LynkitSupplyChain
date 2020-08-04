@@ -35,7 +35,9 @@ public class BaseClass {
 		Reporter.log("Setting up reports and Test is gettinge ready", true);
 		excel=new ExcelDataProvider();
 		config=new ConfigDataProvider();
-		ExtentHtmlReporter extent=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"./Reports/SupplyChain "+Helper.getCurrentDateTime()+".html"));
+		ExtentHtmlReporter extent=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"./Reports/Report.html"));
+		
+		//ExtentHtmlReporter extent=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"./Reports/Report"+Helper.getCurrentDateTime()+".html"));
 	report=new ExtentReports();
 	report.attachReporter(extent);
 	
@@ -76,6 +78,4 @@ public class BaseClass {
 		report.flush();
 		Reporter.log("Test Completed >>> Reports Generated", true);	
 	}
-	
-	
-}
+	}

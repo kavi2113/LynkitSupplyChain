@@ -5,18 +5,17 @@
     <classes>
       <class name="com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest">
         <methods>
-          <include name="createFTLGodownBill"/>
-          <include name="loginFTLApp"/>
-          <include name="invoiceFTLGodownDetails"/>
+          <include name="createGoods"/>
           <include name="setup"/>
-          <include name="createFTLGodownGoods"/>
+          <include name="createBill"/>
           <include name="tearDown"/>
-          <include name="transportFTLGodownDetails"/>
           <include name="tearDownMethod"/>
-          <include name="basicFTLGodownDetails"/>
-          <include name="paymentFTLGodownDetails"/>
-          <include name="weightFTLGodownDetails"/>
+          <include name="paymentDetails"/>
+          <include name="basicDetails"/>
           <include name="setUpSuite"/>
+          <include name="invoiceDetails"/>
+          <include name="weightDetails"/>
+          <include name="loginApp"/>
         </methods>
       </class> <!-- com.lynkitsupplychainframework.testcases.FTLDoorDeliveryTest -->
     </classes>
